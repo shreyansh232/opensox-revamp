@@ -140,21 +140,6 @@ export const Features = () => {
             ))}
           </div>
         </motion.div>
-
-        <motion.div
-          className="mt-16 text-center"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3, delay: 0.4 }}
-        >
-          <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/5 backdrop-blur-md border border-white/10 hover:border-[#5D2DE6]/50 transition-all duration-300 cursor-pointer group">
-            <FaFilter className="w-5 h-5 text-gray-400 group-hover:text-[#5D2DE6] transition-colors" />
-            <span className="text-gray-300 group-hover:text-white transition-colors">
-              Advanced Filters Coming Soon
-            </span>
-            <FaBolt className="w-4 h-4 text-[#5D2DE6]" />
-          </div>
-        </motion.div>
       </motion.div>
     </section>
   );
