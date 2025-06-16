@@ -3,10 +3,8 @@ import { motion } from "framer-motion";
 import {
   FaCode,
   FaPalette,
-  FaFilter,
   FaStar,
   FaUsers,
-  FaBolt,
   FaBullseye,
 } from "react-icons/fa";
 
