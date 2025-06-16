@@ -66,13 +66,13 @@ export const Features = () => {
         className="max-w-7xl mx-auto"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.3 }}
       >
         <motion.div
           className="text-center mb-16"
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{ duration: 0.3, delay: 0.1 }}
         >
           <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-b from-gray-200 to-gray-500 bg-clip-text text-transparent mb-6">
             Discover Projects
@@ -84,27 +84,28 @@ export const Features = () => {
         </motion.div>
 
         <motion.div
-          className="relative rounded-3xl bg-white/5 backdrop-blur-md border border-white/10 shadow-lg p-6"
+          className="relative rounded-3xl bg-white/5 backdrop-blur-md border border-[#5D2DE6]/50 shadow-lg p-6 "
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
+          transition={{ duration: 0.3, delay: 0.2 }}
         >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[200px]">
             {filters.map((filter, index) => (
               <motion.div
                 key={filter.id}
-                className={`group relative overflow-hidden rounded-2xl bg-[#5D2DE6]/10 backdrop-blur-md border border-white/10 transition-all duration-300 cursor-pointer ${filter.className}`}
+                className={`group relative overflow-hidden rounded-2xl bg-[#5D2DE6]/50 backdrop-blur-md border border-white/10 transition-all duration-300 cursor-pointer ${filter.className}`}
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.1 * index }}
+                transition={{ duration: 0.3, delay: 0.05 * index }}
                 whileHover={{
                   scale: 1.02,
                   boxShadow: "0 20px 40px rgba(93, 45, 230, 0.1)",
                   backgroundColor: "rgba(93, 45, 230, 0.05)",
+                  border: "1px solid #5D2DE6",
                 }}
               >
                 <div
-                  className={`absolute inset-0 bg-gradient-to-br ${filter.gradient} opacity-20 group-hover:opacity-30 transition-opacity duration-300`}
+                  className={`absolute inset-0 bg-gradient-to-br opacity-20 group-hover:opacity-30 transition-opacity duration-300`}
                 />
 
                 <div className="relative h-full p-6 flex flex-col justify-between">
@@ -144,7 +145,7 @@ export const Features = () => {
           className="mt-16 text-center"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.8 }}
+          transition={{ duration: 0.3, delay: 0.4 }}
         >
           <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/5 backdrop-blur-md border border-white/10 hover:border-[#5D2DE6]/50 transition-all duration-300 cursor-pointer group">
             <FaFilter className="w-5 h-5 text-gray-400 group-hover:text-[#5D2DE6] transition-colors" />

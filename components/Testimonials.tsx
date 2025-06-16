@@ -20,7 +20,7 @@ export const Testimonials = () => {
       />
       <div className="container mx-auto p-20 text-gray-200">
         <motion.h2
-          className="text-6xl font-semibold text-center mb-2 bg-gradient-to-b from-gray-200 to-gray-500 bg-clip-text text-transparent"
+          className="text-5xl font-semibold text-center mb-2 bg-gradient-to-b from-gray-200 to-gray-500 bg-clip-text text-transparent"
           style={{ lineHeight: "1.2" }}
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}

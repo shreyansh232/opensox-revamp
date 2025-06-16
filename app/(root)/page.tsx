@@ -1,8 +1,7 @@
 import { Hero } from "@/components/Hero";
 import { Testimonials } from "@/components/Testimonials";
 import { Features } from "@/components/Features";
-
-import React from "react";
+import { Footer } from "@/components/Footer";
 
 const page = () => {
   return (
@@ -10,6 +9,7 @@ const page = () => {
       <Hero />
       <Features />
       <Testimonials />
+      <Footer />
     </div>
   );
 };
